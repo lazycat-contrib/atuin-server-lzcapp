@@ -1,0 +1,30 @@
+params:
+  - id: open_registration
+    type: bool
+    name: "Open Registration"
+    description: "Allow new users to register accounts"
+    default_value: "true"
+    optional: false
+
+  - id: db_uri
+    type: string
+    name: "Database URI"
+    description: "Database connection string. Default is SQLite. For PostgreSQL use: postgres://user:password@hostname/database"
+    default_value: "sqlite:///config/atuin.db"
+    optional: false
+
+locales:
+  zh:
+    open_registration:
+      name: "开放注册"
+      description: "允许新用户注册账号"
+    db_uri:
+      name: "数据库连接"
+      description: "数据库连接地址。默认为 SQLite，使用 PostgreSQL 请填写：postgres://用户名:密码@主机/数据库名"
+  en:
+    open_registration:
+      name: "Open Registration"
+      description: "Allow new users to register accounts"
+    db_uri:
+      name: "Database URI"
+      description: "Database connection string. Default is SQLite. For PostgreSQL use: postgres://user:password@hostname/database"

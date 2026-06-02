@@ -1,0 +1,34 @@
+application:
+  subdomain: atuin
+  entries:
+    - id: help
+      title: "Help"
+      path: /help
+  upstreams:
+    - location: /help
+      backend: file:///lzcapp/pkg/content/web/index.html
+    - location: /
+      backend: http://atuin:8888/
+  public_path:
+    - /
+
+services:
+  atuin:
+    # ghcr.io/atuinsh/atuin:18.16.1
+    image: registry.lazycat.cloud/czyt/atuinsh/atuin:b04cbf4ce000d321
+    user: root
+    command: start
+    environment:
+      - ATUIN_HOST=0.0.0.0
+      - ATUIN_PORT=8888
+      - ATUIN_OPEN_REGISTRATION={{.U.open_registration}}
+      - ATUIN_DB_URI={{.U.db_uri}}
+      - RUST_LOG=info,atuin_server=debug
+    binds:
+      - /lzcapp/var/config:/config
+
+usage: |
+  Atuin Shell History Server
+
+  Open the app to see setup instructions.
+  Server address is automatically detected from your browser.

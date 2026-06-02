@@ -1,0 +1,27 @@
+package: community.lazycat.app.atuin
+version: 18.16.1
+name: Atuin
+description: "Magical shell history - sync, search, and backup your shell history"
+min_os_version: 1.5.0
+author: atuinsh
+license: MIT
+homepage: https://github.com/atuinsh/atuin
+
+locales:
+  zh:
+    name: "Atuin"
+    description: "Atuin的服务端，用户同步、搜索和备份你的 Shell 历史"
+    entries.help.title: "使用帮助"
+  en:
+    name: "Atuin"
+    description: "Atuin sync server - sync, search, and backup your shell history"
+    entries.help.title: "Help"
+
+unsupported_platforms:
+  - ios
+  - android
+  - tvos
+
+permissions:
+  required:
+    - net.internet
