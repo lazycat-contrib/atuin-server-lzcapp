@@ -1,7 +1,7 @@
 application:
   subdomain: atuin
   entries:
-    - id: help
+    - id: main
       title: "Help"
       path: /help
   upstreams:
@@ -27,8 +27,10 @@ services:
     binds:
       - /lzcapp/var/config:/config
 
-usage: |
-  Atuin Shell History Server
+    usage: |
+      Atuin Shell 历史服务器
 
-  Open the app to see setup instructions.
-  Server address is automatically detected from your browser.
+      打开应用查看使用说明。
+      服务器地址会自动从浏览器检测。
+
+      注意：您可能需要刷新/重新打开页面才能跳转到帮助页面。

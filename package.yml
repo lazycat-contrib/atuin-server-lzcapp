@@ -10,12 +10,26 @@ homepage: https://github.com/atuinsh/atuin
 locales:
   zh:
     name: "Atuin"
-    description: "Atuin的服务端，用户同步、搜索和备份你的 Shell 历史"
-    entries.help.title: "使用帮助"
+    description: "Atuin的服务端，用于同步、搜索和备份你的 Shell 历史"
+    entries.main.title: "使用帮助"
+    usage: |
+      Atuin Shell 历史服务器
+
+      打开应用查看使用说明。
+      服务器地址会自动从浏览器检测。
+
+      注意：您可能需要刷新/重新打开页面才能跳转到帮助页面。
   en:
     name: "Atuin"
     description: "Atuin sync server - sync, search, and backup your shell history"
-    entries.help.title: "Help"
+    entries.main.title: "Help"
+    usage: |
+      Atuin Shell History Server
+
+      Open the app to see setup instructions.
+      Server address is automatically detected from your browser.
+
+      Note: You may need to refresh/reopen the page to be redirected to the help page.
 
 unsupported_platforms:
   - ios
