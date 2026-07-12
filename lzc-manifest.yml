@@ -26,11 +26,3 @@ services:
       - RUST_LOG=info,atuin_server=debug
     binds:
       - /lzcapp/var/config:/config
-
-    usage: |
-      Atuin Shell 历史服务器
-
-      打开应用查看使用说明。
-      服务器地址会自动从浏览器检测。
-
-      注意：您可能需要刷新/重新打开页面才能跳转到帮助页面。
