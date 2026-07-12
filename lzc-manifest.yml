@@ -11,11 +11,11 @@ application:
       backend: http://atuin:8888/
   public_path:
     - /
-
 services:
   atuin:
     # ghcr.io/atuinsh/atuin:18.16.1
-    image: registry.lazycat.cloud/czyt/atuinsh/atuin:b04cbf4ce000d321
+    # upstream: ghcr.io/atuinsh/atuin:18.17.0
+    image: registry.lazycat.cloud/czyt/atuinsh/atuin:92930e30e8ed3411
     user: root
     command: start
     environment:
