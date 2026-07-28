@@ -14,8 +14,8 @@ application:
 services:
   atuin:
     # ghcr.io/atuinsh/atuin:18.16.1
-    # upstream: ghcr.io/atuinsh/atuin:18.18.0
-    image: registry.lazycat.cloud/czyt/atuinsh/atuin:965745f87c35c541
+    # upstream: ghcr.io/atuinsh/atuin:18.18.1
+    image: registry.lazycat.cloud/czyt/atuinsh/atuin:f6be896ab0e30784
     user: root
     command: start
     environment:
