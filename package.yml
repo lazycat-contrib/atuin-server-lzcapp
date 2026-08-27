@@ -1,5 +1,5 @@
 package: community.lazycat.app.atuin
-version: 18.20.0
+version: 18.20.1
 name: Atuin
 description: "Magical shell history - sync, search, and backup your shell history"
 min_os_version: 1.5.0
